@@ -5,3 +5,5 @@ Using ['Ping' utility](http://github.com/alfg/ping.js), by Alfred Gutierrez, to 
 Note: 'dist' folder included just to hold ping.min.js, though this file is not used by this index.html implementation.
 
 Plan: ping Heroku apps in background from front page of my portfolio, possibly with console.log outputs to confirm / explain pings.
+
+Might also be a good idea to invoke this method when any action on portfolio page, to cover case where page left open on browser for long enough for Heroku apps to sleep, then page returned to later (without refreshing).
