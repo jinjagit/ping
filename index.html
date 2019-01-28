@@ -5,21 +5,16 @@
   <title>Ping</title>
 </head>
 <body>
-  <p id="ping-github">test if can ping from static page visit / refresh</p>
+  <p>put super-cool portfolio landing page here</p>
 <script type="text/javascript" src="ping.js"></script>
 <script type="text/javascript">
 var p = new Ping();
-
+console.log("Pinging Heroku apps to wake if sleeping...")
+console.log("Sleeping apps should be up in 20 seconds from succcessful ping(s):")
 p.ping("http://murmuring-falls-90745.herokuapp.com/", function(err, data) {
-  // Also display error if err is returned.
-  if (err) {
-    console.log("error loading resource")
-    data = data + " " + err;
-  }
-  //data = "pinged";
-  document.getElementById("ping-github").innerHTML = data;
+  data = "Blogger: ping time " + data + " ms"
+  console.log(data)
 });
-
 </script>
 </body>
 </html>
