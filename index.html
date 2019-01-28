@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Ping</title>
+</head>
+<body>
+  <p id="ping-github">test if can ping from static page visit / refresh</p>
+<script type="text/javascript" src="ping.js"></script>
+<script type="text/javascript">
+var p = new Ping();
+
+p.ping("http://murmuring-falls-90745.herokuapp.com/", function(err, data) {
+  // Also display error if err is returned.
+  if (err) {
+    console.log("error loading resource")
+    data = data + " " + err;
+  }
+  //data = "pinged";
+  document.getElementById("ping-github").innerHTML = data;
+});
+
+</script>
+</body>
+</html>
