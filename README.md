@@ -12,4 +12,6 @@ Also, monitor the portfolio page for events (clicks and mouse-overs), and check 
 
 Thus, visits to my portfolio page will trigger pings to my Heroku apps, and continued / renewed activity on that page will keep their dynos 'awake' / 'reawaken' them. This should allow my Heroku dynos plenty of opportunities to 'sleep' in the meantime, hopefully avoiding / minimizing dyno fees.
 
+The user experience will often not be ideal, but will at least include clear messages to explain what is (not) happening and, in some cases, will avoid any issues for the user (e.g. if a user takes 30 seconds to read my profile before choosing to visit a Heroku app).
+
 The code here is the functional proof-of-concept, with a simplified 'server initializing' message which I have styled accordingly in my portfolio web-page.
