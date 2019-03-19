@@ -6,7 +6,7 @@ Heroku free tier apps are on dynos that sleep after 30 minutes of inactivity. Pi
 
 ### The (partial) solution
 
-Use ['Ping' utility](http://github.com/alfg/ping.js), by Alfred Gutierrez, to wake my Heroku app(s), by pinging them when my portfolio web-page is loaded / refreshed and show a 'server initializing' message for each Heroku app linked in the portfolio. The message shows an animated countdown in seconds (from 30 to 0), and a final 'server active message' which clears after being displayed for 5 seconds.
+Use ['Ping' utility](http://github.com/alfg/ping.js), by Alfred Gutierrez, to wake my Heroku app(s), by pinging them when my portfolio web-page is loaded / refreshed and show a 'server initializing' message for each Heroku app linked in the portfolio. The message shows an animated countdown in seconds (from 30 to 0), and a final 'server active' message which clears after being displayed for 5 seconds.
 
 Also, monitor the portfolio page for events (clicks and mouse-overs), and check the time since last pinging the Heroku apps on each event occurrence. If this time is > 15 mins and < 30 mins, then silently ping the apps again to keep their dynos active. If this time is >= 30 minutes, then ping the apps _and_ show the 'server initializing' message again for each Heroku app linked in the portfolio.
 
