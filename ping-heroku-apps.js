@@ -3,14 +3,6 @@
    may be initializing when when page opened or refreshed, or on any mouseover
    or click if apps not pinged in last 30 minutes.*/
 
-document.body.addEventListener('click', function() {
-  pingIfDue();
-});
-
-document.body.addEventListener('mouseover', function() {
-  pingIfDue();
-});
-
 let last_run = new Date;
 let apps = {'Dream Flights': 'https://dream-flights-simontharby.herokuapp.com/',
             'Social Light': 'https://social-light-simontharby.herokuapp.com/',
@@ -21,6 +13,14 @@ const getTime = typeof performance === 'function' ? performance.now : Date.now;
 let noticeTime = 31;
 let lastUpdate = getTime();
 let notice = document.getElementById('notice');
+
+document.body.addEventListener('click', function() {
+  pingIfDue();
+});
+
+document.body.addEventListener('mouseover', function() {
+  pingIfDue();
+});
 
 notice.style.display = 'none';
 showNotice();
