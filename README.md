@@ -2,7 +2,7 @@
 
 ### The problem
 
-Heroku free tier apps are on dynos that sleep after 30 minutes of inactivity. Pinging them at intervals of less than 30 minutes will keep them 'awake', _but_ the free tier only allows for 1000 free dyno hours / month. A month is up to 744 hours, meaning a total of 1.25 'always-awake' dynos for free. I have 4 apps I wish to link via [my portfolio](https://simontharby.com/), and will be adding more. Since each app uses one free dyno, I will incur (quite significant) costs if I simply ping them all to keep them all constantly active.
+Heroku free tier apps are on dynos that sleep after 30 minutes of inactivity. Pinging them at intervals of less than 30 minutes will keep them 'awake', _but_ the free tier only allows for 1000 free dyno hours / month. A month is up to 744 hours, meaning a total of 1.25 'always-awake' dynos for free. I have 4 Heroku apps linked via [my portfolio](https://simontharby.com/), and will be adding more. Since each app uses one free dyno, I will incur (quite significant) costs if I simply ping them all to keep them all constantly active.
 
 ### The (partial) solution
 
