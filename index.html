@@ -5,21 +5,21 @@
   <title>Ping</title>
 </head>
 <body>
+  <div id="top"></div>
   <p>put super-cool portfolio landing page here</p>
   <br>
   <br>
 
+<p id="notice" style="color:blue;"></p>
+<br>
+<br>
+
+<a href="#profile">go to top</a>
+<br>
 <a href="https://murmuring-falls-90745.herokuapp.com/articles?top_3=true">Blogger</a>
 
 <script type="text/javascript" src="ping.js"></script>
-<script type="text/javascript">
-var p = new Ping();
-console.log("Pinging Heroku apps to wake if sleeping...")
-console.log("Sleeping apps should be up in 20 seconds from succcessful ping(s):")
-p.ping("http://murmuring-falls-90745.herokuapp.com/", function(err, data) {
-  data = "Blogger: ping time " + data + " ms"
-  console.log(data)
-});
-</script>
+<script type="text/javascript" src="ping-heroku-apps.js"></script>
+
 </body>
 </html>
