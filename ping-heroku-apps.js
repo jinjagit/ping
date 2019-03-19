@@ -20,7 +20,7 @@ const FRAME_DURATION = 1000;
 const getTime = typeof performance === 'function' ? performance.now : Date.now;
 let noticeTime = 31;
 let lastUpdate = getTime();
-let notice = document.getElementById('notice')
+let notice = document.getElementById('notice');
 
 notice.style.display = 'none';
 showNotice();
